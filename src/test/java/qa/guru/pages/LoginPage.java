@@ -11,12 +11,12 @@ public class LoginPage  {
     SelenideElement
             registrationBtn = $("#xdget51950_1");
 
-
     @Step("Нажимаем на кнопку регистрации")
     public LoginPage clickRegistrationBtn() {
         registrationBtn.click();
         return this;
     }
+
     @Step("Проверяем, что открыта форма авторизации")
     public LoginPage checkThatAutorizationFormOpened() {
         $("#xdget172046_1").shouldHave(text("Войти"));

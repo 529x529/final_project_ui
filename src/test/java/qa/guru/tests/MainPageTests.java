@@ -42,7 +42,7 @@ public class MainPageTests extends BaseTest {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("Проверка открытия регистрационной формы со страницы авторизации")
     void openRegistrationForm() {
         mainPage
                 .openPage()

@@ -16,14 +16,12 @@
 </p>
 
 ### Реализованные проверки:
-* Отображение строки поиска на главной странице
-* Проверка плейсхолдера строки поиска на главной странице
-* Переход на страницу результатов поиска при выполнении поиска с главной страницы
-* Переход на страницу расширенного поиска с главной страницы
-* Отображение поисковых подсказок на главной странице
-* Проверка заголовка строки поиска на главной странице
-* Отображение popup подтверждения региона на главной странице
-* Отсутствие ошибок в логах консоли
+* Проверка открытия главной страницы qa.guru
+* Переход на страницу авторизации при нажатии на кнопку входа в личный кабинет
+* Проверка открытия регистрационной формы со страницы авторизации
+* Проверка, что в главном меню есть курс по Java+
+* Проверка, что в главном меню есть курс по Python
+* Проверка отсутствия ошибок в логах консоли
 
 ### Запуск тестов из терминала
 #### Локальный запуск тестов:
@@ -34,20 +32,20 @@ gradle clean test
 #### Удаленный запуск тестов с параметрами:
 
 ```bash
-gradle clean test 
+gradle clean test
 -Dbrowser=${BROWSER}
--DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${BROWSER_SIZE}
--DremoteDriverUrl=https://user1:1234@${REMOTE_DRIVER_URL}/wd/hub/
--DvideoStorage=https://${VIDEO_STORAGE}/video/
+-DbrowserVersion=${BROWSER_VERSION}
+-DbaseUrl=${BASE_URL}
+-Dselenoid=${SELENOID}
 ```
 где: 
 
-- <code>BROWSER</code> – браузер, в котором будут выполняться тесты.
-- <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты.
-- <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты.
-- <code>REMOTE_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
-- <code>VIDEO_STORAGE</code> - адрес удаленного сервера, по которому можно получить видео.
+- <code>BROWSER</code> – браузер, в котором будут выполняться тесты;
+- <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты;
+- <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты;
+- <code>BASE_URL</code> – адрес сайта;
+- <code>SELENOID</code> - Логин, пароль и адрес удаленного сервера Selenoid на котором будут запускаться тесты.
 
 ### Сборка в Jenkins
 <p align="center">
@@ -65,28 +63,12 @@ gradle clean test
 <img title="Jenkins Build" src="images/screens/Allure-tests.png">
 </p>
 
-### Интеграция с Allure TestOps
-#### Dashboard
-<p align="center">
-<img title="Jenkins Build" src="images/screens/Allure-TestOps-dashboard.png">
-</p>
-
-#### Тест-кейсы
-<p align="center">
-<img title="Jenkins Build" src="images/screens/Allure-TestOps-tests.png">
-</p>
-
-### Интеграция с Jira
-<p align="center">
-<img title="Jenkins Build" src="images/screens/Jira.png">
-</p>
-
 ### Уведомления в Telegram с использованием бота
 <p align="center">
-<img title="Jenkins Build" src="images/screens/tg.png">
+<img title="Jenkins Build" src="images/screens/Telegram.png">
 </p>
 
 ### Пример видео выполнения теста на Selenoid
 <p align="center">
-  <img title="Selenoid Video" src="images/screens/video.gif">
+  <img title="Selenoid Video" src="images/screens/Video.gif">
 </p>

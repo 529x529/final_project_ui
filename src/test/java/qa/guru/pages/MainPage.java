@@ -19,7 +19,7 @@ public class MainPage {
 
     @Step("Открываем главную страницу")
     public MainPage openPage() {
-        open("https://qa.guru");
+        open("");
         return this;
     }
 

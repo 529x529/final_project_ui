@@ -10,9 +10,7 @@
 <img src="images/logos/Selenide.svg" width="50" height="50"  alt="Selenide"/>
 <img src="images/logos/Selenoid.svg" width="50" height="50"  alt="Selenoid"/>
 <img src="images/logos/Allure_Report.svg" width="50" height="50"  alt="Allure_Report"/>
-<img src="images/logos/Allure_TO.svg" width="50" height="50"  alt="Allure_TO"/>
 <img src="images/logos/Jenkins.svg" width="50" height="50"  alt="Jenkins"/>
-<img src="images/logos/Jira.svg" width="50" height="50"  alt="Jira"/>
 </p>
 
 ### Реализованные проверки:

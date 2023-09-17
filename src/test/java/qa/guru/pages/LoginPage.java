@@ -8,7 +8,9 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
 
-    SelenideElement registrationBtn = $("#xdget51950_1");
+    private SelenideElement
+            registrationBtn = $("#xdget51950_1"),
+            loginPageLogo = $(".logo");
 
     @Step("Нажимаем на кнопку регистрации")
     public LoginPage clickRegistrationBtn() {
@@ -26,5 +28,10 @@ public class LoginPage {
     public LoginPage checkThatRegistrationFormOpened() {
         $("#xdget89548_1").shouldHave(text("Регистрация"));
         return this;
+    }
+
+    @Step("Нажимаем на логотип qa.guru на странице авторизации")
+    public void clickLoginPageLogo() {
+        loginPageLogo.click();
     }
 }

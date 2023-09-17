@@ -8,8 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import qa.guru.helpers.Attach;
-import qa.guru.pages.LoginPage;
-import qa.guru.pages.MainPage;
+import qa.guru.pages.*;
 
 import java.util.Map;
 
@@ -19,6 +18,10 @@ public class BaseTest {
 
     MainPage mainPage = new MainPage();
     LoginPage loginPage = new LoginPage();
+    PythonCoursePage pythonCoursePage = new PythonCoursePage();
+    JavaCoursePage javaCoursePage = new JavaCoursePage();
+
+    JavaPlusCoursePage javaPlusCoursePage = new JavaPlusCoursePage();
 
     @BeforeAll
     @Step("Настройка окружения")

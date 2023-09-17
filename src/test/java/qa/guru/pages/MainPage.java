@@ -12,7 +12,8 @@ public class MainPage {
 
     LoginPage loginPage = new LoginPage();
 
-    SelenideElement
+    private SelenideElement
+
             mainPageLogo = $("#qa_header_custom_header .main-header__logo"),
             mainPageMenu = $("#qa_header_custom_header .main-header__menu"),
             personalAccountBtn = $(".main-header__login");
@@ -35,10 +36,9 @@ public class MainPage {
         return loginPage;
     }
 
-    @Step("Проверяем, что в главном меню есть выбранный курс")
-    public MainPage checkCourseInMainMenu(String course) {
+    @Step("Открываем страницу выбранного курса")
+    public void openCourseInMainMenu(String course) {
         mainPageMenu.$(byText(course)).click();
-        return this;
     }
 
 }

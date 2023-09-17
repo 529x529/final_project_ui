@@ -45,7 +45,7 @@ gradle clean test
 - <code>BASE_URL</code> – адрес сайта;
 - <code>SELENOID</code> - Логин, пароль и адрес удаленного сервера Selenoid на котором будут запускаться тесты.
 
-### Сборка в Jenkins
+### Сборка в [Jenkins](https://jenkins.autotests.cloud/job/rezchikov_qa.guru_tests)
 <p align="center">
 <img title="Jenkins Build" src="images/screens/Jenkins.png">
 </p>

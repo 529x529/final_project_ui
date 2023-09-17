@@ -50,7 +50,7 @@ gradle clean test
 <img title="Jenkins Build" src="images/screens/Jenkins.png">
 </p>
 
-### Отчет в Allure report
+### Отчет в [Allure report](https://jenkins.autotests.cloud/job/rezchikov_qa.guru_tests/7/allure/)
 #### Основная страница отчета
 <p align="center">
 <img title="Jenkins Build" src="images/screens/Allure-report.png">
